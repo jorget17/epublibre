@@ -24,7 +24,8 @@ fecha_limite = input('Introduce la fecha limite (yyyy-mm-dd): ')
 
 # Se devuelven los enlaces hasta esa fecha
 
-final = fecha_raw.loc[(fecha_raw['Fecha'] >= fecha_limite), ['Título', 'Autor', 'Enlace(s)', 'Fecha']]
+final = fecha_raw.loc[(fecha_raw['Fecha'] >= fecha_limite), [
+    'Título', 'Autor', 'Enlace(s)', 'Fecha']]
 
 final.to_csv('ep2.csv')
 
