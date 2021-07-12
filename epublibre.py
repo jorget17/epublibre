@@ -40,3 +40,5 @@ for enlace in enlaces_raw:
         output.write('transmission-gtk magnet:?xt=urn:btih:' + enlace + '\n')
 
 output.close()
+
+#
